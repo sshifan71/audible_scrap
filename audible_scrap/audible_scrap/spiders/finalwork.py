@@ -22,12 +22,12 @@ class FinalworkSpider(CrawlSpider):
       data = []
 
       for row in rows:
-         country = row.xpath(".//td[2]/text()").get()
-         co2_2022 = row.xpath(".//td[3]/text()").get()
-         year1change = row.xpath(".//td[4]/text()").get()
-         population_2022 = row.xpath(".//td[5]/text()").get()
-         per_capita = row.xpath(".//td[6]/text()").get()
-         share_of_world = row.xpath(".//td[7]/text()").get()
+         country = row.xpath(".//tr/td[2]/a/text()").get()
+         co2_2022 = row.xpath(".//tr/td[3]/text()").get()
+         year1change = row.xpath(".//tr/td[4]/text()").get()
+         population_2022 = row.xpath(".//tr/td[5]/text()").get()
+         per_capita = row.xpath(".//tr/td[6]/text()").get()
+         share_of_world = row.xpath(".//tr/td[7]/text()").get()
 
          data.append({
             "Country": country,
