@@ -7,11 +7,11 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-#BOT_NAME = "audible_scrap"
+BOT_NAME = "audible_scrap"
 
 SPIDER_MODULES = ["audible_scrap.spiders"]
 NEWSPIDER_MODULE = "audible_scrap.spiders"
-
+LOG_LEVEL = 'DEBUG'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "audible_scrap (+http://www.yourdomain.com)"

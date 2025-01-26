@@ -1,8 +1,6 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-from scrapy.loader import ItemLoader
-from itemadapter import ItemAdapter
 import pandas as pd
 
 class FinalworkSpider(CrawlSpider):
